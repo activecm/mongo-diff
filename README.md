@@ -1,1 +1,1 @@
-Usage: mongo-diff <uri> <database 1> <database 2>
+Usage: mongo-diff.py <uri> <database 1> <database 2>
