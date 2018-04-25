@@ -2,6 +2,8 @@
 
 MongoDiff checks whether two MongoDB databases are the same (including indexes).
 
+NOTE: The `_id` field is ignored since it is assumed to be unique.
+
 # Usage
 `mongo-diff.py <uri> <database 1> <database 2>`
 
