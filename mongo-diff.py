@@ -195,13 +195,13 @@ def main():
                     print("\t{0:.0f}% finished comparing {1}.{2} to {3}.{4}".format(search_percent * 100, DB1, coll, DB2, coll))
                     last_percent_update = search_percent
 
-        print("\t{0:.0f}% finished comparing {1}.{2} to {3}.{4}".format(100, DB1, coll, DB2, coll))
-        print(
-            "\tMatched {0} records out of {1} ({2:.2f}%) from {3}.{4} to records in {5}.{6}".format(
-                match_count, collection_counts[0], 100 * match_count / collection_counts[0],
-                DB1, coll, DB2, coll
+            print("\t{0:.0f}% finished comparing {1}.{2} to {3}.{4}".format(100, DB1, coll, DB2, coll))
+            print(
+                "\tMatched {0} records out of {1} ({2:.2f}%) from {3}.{4} to records in {5}.{6}".format(
+                    match_count, collection_counts[0], 100 * match_count / collection_counts[0],
+                    DB1, coll, DB2, coll
+                )
             )
-        )
         for err in errors:
             print(err, file=sys.stderr)
 
